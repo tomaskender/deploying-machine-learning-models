@@ -274,8 +274,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
-                - demo
+                - mine
       # upload after git tags are created
       - section_07_test_and_upload_regression_model:
           <<: *tags_only
@@ -284,8 +283,7 @@ workflows:
          filters:
            branches:
              only:
-               - master
-               - demo
+               - mine
 
 #  test-all:
 #    jobs:
