@@ -1,0 +1,25 @@
+# Package Overview
+package_name: regression_model
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: SalePrice
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+numericals_vars:
+  - age
+  - fare
+
+categorical_vars:
+  - sex
+  - cabin
+  - embarked
+  - title
+
+cabin: cabin
